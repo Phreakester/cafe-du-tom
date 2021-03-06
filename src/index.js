@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Mastiff from './Mastiff';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Mastiff />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
