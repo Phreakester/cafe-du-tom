@@ -1,14 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+import './styles/index.css';
+
 import reportWebVitals from './reportWebVitals';
-import Mastiff from './Mastiff';
+
+import Mastiff from './components/Mastiff';
+import Menu from './components/Menu'
+
+import cappuchino_img from './assets/cappuchino.jpg'
+
+const itemList = [
+  ["Cappuchino", cappuchino_img, "its a cappuchino"],
+  ["Gibraltar", ,"its 3 espresso shots"],
+  ["Iced Coffee", ,"The Uncle Tom Special"],
+];
 
 ReactDOM.render(
   <React.StrictMode>
     <Mastiff />
-    <App />
+    <Menu allItems = {itemList} />
   </React.StrictMode>,
   document.getElementById('root')
 );

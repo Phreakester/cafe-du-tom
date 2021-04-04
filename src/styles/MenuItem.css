@@ -1,0 +1,26 @@
+.item-card {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin: 5px;
+    border: solid black 2px;
+    border-radius: 25px;
+}
+
+.item-name {
+    
+}
+
+.item-img {
+    width: 80%;
+    height: auto;
+    border: solid black 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.item-description {
+
+}
