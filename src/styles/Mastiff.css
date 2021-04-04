@@ -1,5 +1,21 @@
+.mastiff-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .logo-text {
     text-align: center;
     background-color: #dbc1ac;
     padding: 3%;
+    width: 100%;
 }
+
+.intro-text {
+    background-color: #38220f;
+    border: solid black 2px;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 5px;
+    width: 90%
+  }
