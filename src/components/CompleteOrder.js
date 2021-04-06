@@ -1,7 +1,7 @@
-function CompleteOrder() {
+function CompleteOrder(props) {
   return (
-    <div className="main-body">
-      Hello, and thank you for using the Cafe du Tom virtual ordering service! Simply enter your order from the menu below, enter your phone number, and we will text you when your order is available.
+    <div className="complete-order-main" onClick = {() => console.log(props.order.length)}>
+      {props.order[0] && <button className="complete-order-button">Complete Order</button>}
     </div>
   );
 }
