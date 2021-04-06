@@ -1,9 +1,22 @@
-import logo from './logo.svg';
+import Mastiff from './Mastiff';
+import Menu from './Menu';
+import CompleteOrder from './CompleteOrder';
+
+import cappuchino_img from './../assets/cappuchino.jpg'
+
+const itemList = [
+  ["Cappuchino", cappuchino_img, "its a cappuchino"],
+  ["Gibraltar", ,"its 3 espresso shots"],
+  ["Iced Coffee", ,"The Uncle Tom Special"],
+];
+
 
 function App() {
   return (
     <div className="main-body">
-      Hello, and thank you for using the Cafe du Tom virtual ordering service! Simply enter your order from the menu below, enter your phone number, and we will text you when your order is available.
+      <Mastiff />
+      <Menu allItems = {itemList} />
+      <CompleteOrder />
     </div>
   );
 }

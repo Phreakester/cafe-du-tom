@@ -5,8 +5,7 @@ import './styles/index.css';
 
 import reportWebVitals from './reportWebVitals';
 
-import Mastiff from './components/Mastiff';
-import Menu from './components/Menu'
+import App from './components/App'
 
 import cappuchino_img from './assets/cappuchino.jpg'
 
@@ -18,8 +17,7 @@ const itemList = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <Mastiff />
-    <Menu allItems = {itemList} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
