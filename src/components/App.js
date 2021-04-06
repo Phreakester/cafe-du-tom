@@ -17,13 +17,12 @@ function App() {
   const [order, setOrder] = useState([]);
 
   function addToOrder(itemToAdd) {
-    setOrder(...order, itemToAdd)
+    setOrder([...order, itemToAdd])
     console.log('Added ' + itemToAdd + ' to the order.');
   }
 
   return (
     <div className="main-body">
-      <div onClick = {() => console.log(order)}>List order</div>
       <Mastiff />
       <Menu allItems = {itemList} addToOrder = {addToOrder} />
       <CompleteOrder order = {order} />

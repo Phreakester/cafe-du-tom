@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 import './../styles/MenuItem.css';
 
+import LevelSelector from './LevelSelector'
+
 function MenuItem(props) {
   const item = props.item;
+  var itemToAdd = item;
   const [isClicked, setIsClicked] = useState(false);
+  const [modificatons, setModifications] = useState(null);
 
   return (
     isClicked ? ( //Change to the clicked version of the card, where they can specify sugar, milk, etc.
       <div className="item-card">
-        <button onClick = {() => {setIsClicked(false); props.addToOrder('cappuchino');}}>Add to order?</button>
+        <LevelSelector added="sugar"/>
+        <LevelSelector added="creme" />
+        <button onClick = {() => {setIsClicked(false); props.addToOrder(itemToAdd);}}>Add to order?</button>
+        <button onClick={() => setIsClicked(false)} >Cancel</button>
       </div>
     ) : (
     <div className="item-card" onClick={() => setIsClicked(true)}>
